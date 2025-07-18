@@ -3,7 +3,7 @@ import "./app.css";
 import Navbar from "./components/navbar/navbar.jsx";
 import { Routes } from "react-router-dom";
 import { Route } from "react-router-dom";
-import Home from "./pages/home/home.jsx";
+import Home from "./pages/Home/Home.jsx";
 import PlaceOrder from "./pages/placeorder/placeorder.jsx";
 import Cart from "./pages/cart/cart.jsx";
 
