@@ -60,7 +60,7 @@ import bag_icon from './bag_icon.png'
 import logout_icon from './logout_icon.png'
 import parcel_icon from './parcel_icon.png'
 
-export const assets = {
+const assets = {
     logo,
     basket_icon,
     header_img,
@@ -82,7 +82,7 @@ export const assets = {
     parcel_icon
 }
 
-export const menu_list = [
+const menu_list = [
     {
         menu_name: "Salad",
         menu_image: menu_1
@@ -116,7 +116,7 @@ export const menu_list = [
         menu_image: menu_8
     }]
 
-export const food_list = [
+const food_list = [
     {
         _id: "1",
         name: "Greek salad",
@@ -348,3 +348,5 @@ export const food_list = [
         category: "Noodles"
     }
 ]
+
+export { assets, menu_list, food_list };
