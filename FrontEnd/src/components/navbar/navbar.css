@@ -1,0 +1,64 @@
+.navbar {
+    justify-content: space-between;
+    display: flex;
+    align-items: center;
+    padding: 50px 0px;
+    
+}
+.navbar .logo {
+    width: 150px;
+   height: auto;
+}
+.navbar-menu {
+    list-style: none;
+    display: flex;
+    gap: 30px;
+    color: #49557e;
+    font-family: 'Outfit';
+}
+   
+.navbar-right {
+  display: flex;
+  align-items: center;
+  gap: 40px;  
+  padding: 10px;            /* ⛔ Remove default gap */
+}
+.navbar-buttons{
+    background: transparent;
+    font-size: 16px;
+    color: #49557e;
+    border: 1px solid #49557e;
+    padding: 10px 20px;
+    border-radius: 50px;
+    cursor: pointer;
+    transition: 0.3s;
+
+}
+.navbar-buttons:hover {
+    background: #fff4f2;
+   
+}
+.navbar-menu {
+  list-style: none;
+  display: flex;
+  gap: 30px;
+  padding: 0;
+  margin: 0;
+}
+
+.navbar-menu li {
+  cursor: pointer;
+  padding: 10px 5px;
+  position: relative;
+  color: #333;
+  font-size: 18px;
+  font-weight: 500;
+  transition: all 0.3s ease;
+  line-height: 24px;
+}
+
+.navbar-menu li.active {
+  border-bottom: 2px solid #ff4f4f;
+  padding-bottom: 4px;        /* <-- Add this to create space for underline */
+  color: #ff4f4f;
+}
