@@ -1,13 +1,15 @@
 import cors from 'cors';
 import express from 'express';
 import connectDB from './config/db.js'; 
+
 import foodRouter from './routes/foodRoutes.js';
+import userRouter from './routes/userRoutes.js';
 
 const app = express();
 const PORT = process.env.PORT || 3000;
 
 
-// Middleware e
+// Middleware 
 
 app.use(express.json());      
 app.use(cors());  
@@ -16,6 +18,7 @@ app.use(express.urlencoded({ extended: true }));
 connectDB(); // Connect to MongoDB
 
 app.use('/api/foods', foodRouter);
+app.use('/api/users', userRouter);
 app.use('/uploads', express.static('uploads')); 
 
 app.get('/', (req, res) => {
