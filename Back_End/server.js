@@ -4,6 +4,7 @@ import connectDB from './config/db.js';
 
 import foodRouter from './routes/foodRoutes.js';
 import userRouter from './routes/userRoutes.js';
+import cartRouter from './routes/cartRoutes.js';
 
 const app = express();
 const PORT = process.env.PORT || 3000;
@@ -19,6 +20,7 @@ connectDB(); // Connect to MongoDB
 
 app.use('/api/foods', foodRouter);
 app.use('/api/users', userRouter);
+app.use('/api/cart', cartRouter);
 app.use('/uploads', express.static('uploads')); 
 
 app.get('/', (req, res) => {
